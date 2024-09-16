@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фальшивая Форма</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; margin-top: 50px; }
+        .container { padding: 20px; border: 2px solid #ccc; border-radius: 10px; background-color: #f4f4f4; }
+        input, button { padding: 10px; margin: 5px; }
+        button { background-color: #4CAF50; color: white; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Введите ваши данные</h1>
+        <form>
+            <input id="qee" type="text" placeholder="Имя" /><br />
+            <input id="qwe" type="email" placeholder="Электронная почта" /><br />
+            <button id="but1" type="button">Отправить</button>
+        </form>
+        <p><em>Эта форма не отправляет данные и предназначена для развлечения.</em></p>
+
+        <script>
+            document.getElementById('but1').addEventListener('click', function() {
+    const data2 = document.getElementById('qee').value;
+    const data3 = document.getElementById('qwe').value;
+
+    console.log("Name: ", data2);
+    console.log("Email:", data3);
+});
+
+        </script>
+    </div>
+</body>
+</html>
